@@ -1,0 +1,44 @@
+{
+  "model": "facebook/opt-125m",
+  "windows": 16,
+  "seqlen": 512,
+  "tokens_scored": 8176,
+  "results": {
+    "baseline": {
+      "ppl": 44.837,
+      "seconds": 2.3
+    },
+    "BASIC": {
+      "ppl": 45.162,
+      "seconds": 78.6
+    },
+    "linear_in+w_BFP16_64": {
+      "ppl": 44.986,
+      "seconds": 36.5
+    },
+    "linear_in+w_BFP14_64": {
+      "ppl": 46.874,
+      "seconds": 32.3
+    },
+    "linear_in+w_BFP12_128": {
+      "ppl": 344.703,
+      "seconds": 32.9
+    },
+    "linear_in+w_BFP12_64": {
+      "ppl": 101.431,
+      "seconds": 39.5
+    },
+    "linear_in+w_BFP12_32": {
+      "ppl": 71.79,
+      "seconds": 36.9
+    },
+    "linear_in+w_BFP12_16": {
+      "ppl": 60.705,
+      "seconds": 42.7
+    },
+    "linear_w_only_BFP12_64": {
+      "ppl": 57.09,
+      "seconds": 28.9
+    }
+  }
+}

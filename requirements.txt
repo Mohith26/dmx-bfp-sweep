@@ -1,0 +1,6 @@
+datasets==5.0.1
+dmx-compressor==0.1.11
+ninja==1.13.2
+pytest==8.4.2
+torch==2.15.0
+transformers==4.49.0
